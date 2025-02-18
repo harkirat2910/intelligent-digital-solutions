@@ -1,0 +1,45 @@
+{
+  "title": "About Us",
+  "section": [
+    {
+      "title": "Deliver AI-Powered Solutions",
+      "content": "Develop and deploy intelligent systems that optimize processes, improve decision-making, and enhance user experiences",
+      "icon": "notes.svg"
+    },
+    {
+      "title": "Enhance Digital Transformation",
+      "content": "Assist businesses in adopting cutting-edge digital technologies to modernize operations and stay competitive.",
+      "icon": "notes.svg"
+    },
+    {
+      "title": "Automate and Optimize Workflows",
+      "content": "Implement automation solutions to reduce manual effort, minimize errors, and increase productivity.",
+      "icon": "notes.svg"
+    },
+    {
+      "title": "Data-Driven Decision Making",
+      "content": "Utilize data analytics, predictive modeling, and business intelligence to provide actionable insights.",
+      "icon": "notes.svg"
+    },
+    {
+      "title": "Cybersecurity and Digital Trust",
+      "content": "Ensure secure digital environments by implementing robust cybersecurity measures.",
+      "icon": "notes.svg"
+    },
+    {
+      "title": "Custom Software and Platform Development",
+      "content": "Design and develop innovative software applications, cloud-based platforms, and digital ecosystems tailored to client needs.",
+      "icon": "notes.svg"
+    },
+    {
+      "title": "Enhance Customer Experience",
+      "content": "Leverage AI-driven chatbots, recommendation engines, and personalization tools to improve user engagement.",
+      "icon": "notes.svg"
+    },
+    {
+      "title": "Scalability and Innovation",
+      "content": "Provide scalable and future-ready digital solutions that grow with business needs.",
+      "icon": "notes.svg"
+    }    
+  ]
+}
