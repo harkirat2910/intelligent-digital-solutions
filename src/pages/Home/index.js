@@ -9,6 +9,7 @@ const Contact = lazy(() => import("../../components/ContactForm"));
 const Container = lazy(() => import("../../common/Container"));
 const ScrollToTop = lazy(() => import("../../common/ScrollToTop"));
 const ContentBlock = lazy(() => import("../../components/ContentBlock"));
+const Card = lazy(() => import("../../components/Card"))
 
 const Home = () => {
   return (
@@ -41,8 +42,9 @@ const Home = () => {
         title={ProductContent.title}
         content={ProductContent.text}
         icon="waving.svg"
-        id="product"
+        id="mission"
       />
+      <Card id="product" />
       <Contact
         title={ContactContent.title}
         content={ContactContent.text}
