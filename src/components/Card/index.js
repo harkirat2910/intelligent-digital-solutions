@@ -22,7 +22,7 @@ export default function ImgMediaCard() {
       image: "/img/svg/noTextLogo.svg", // Change this if the second product has a different image
       title: "Noor-Bot",
       text: "An AI-powered chatbot for instant healthcare support, providing 24/7 assistance for patients and healthcare professionals.",
-      link: "https://www.e-hospital.ca/", // Change if Noor-Bot has a different website
+      link:  "/noorbot", // Change if Noor-Bot has a different website
     },
   ];
 
