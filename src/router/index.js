@@ -6,6 +6,7 @@ import { Styles } from "../styles/styles";
 
 // Manually import each page component instead of dynamically using lazy()
 import Home from "../pages/Home";
+import noorBot from "../noorBot/noorBot.js";
 
 const Router = () => {
   return (
@@ -15,6 +16,7 @@ const Router = () => {
       <Switch>
         <Route path="/" exact component={Home} />
         <Route path="/home" exact component={Home} />
+        <Route path="/noorBot" exact component={noorBot} />
       </Switch>
       <Footer />
     </Suspense>
