@@ -14,6 +14,19 @@ import axios from "axios";
                 response = res.data.answer;
             })
             .catch(error =>{
+                if (error.response) {
+                    // The server responded with a status code that falls out of the range of 2xx
+                    console.error('Response error data:', error.response.data);
+                    console.error('Response error status:', error.response.status);
+                    console.error('Response error headers:', error.response.headers);
+                } else if (error.request) {
+                    // The request was made but no response was received
+                    console.error('Request error:', error.request);
+                } else {
+                    // Something else happened during the setup of the request
+                    console.error('Error message:', error.message);
+                }
+                console.error('Error config:', error.config);
                 response = `Something went wrong : ${error} [ERROR CODE - BQ]`
             })
         return response;
