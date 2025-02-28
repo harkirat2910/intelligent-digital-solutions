@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
+import axios from "axios";
 import ChatBot from "react-chatbotify";
-import { GoogleGenerativeAI } from "@google/generative-ai";
+import {FetchResponse} from './noorBotAI';
 import './noorBot.css';
 
 const settings = {
@@ -31,12 +32,9 @@ const bodyStyle = {
   width:'100vw',
 }
 
-const genAI = new GoogleGenerativeAI("AIzaSyAlSGNT0EKprAvUcp51v8hXv6HBCK4RN5U");
-const runGenAI = async(prompt) => {
-const model = genAI.getGenerativeModel({  model: "gemini-pro"});
-const result = await model.generateContent(prompt);
-const response = await result.response;
-return response.text();
+const runNoorAI = async(prompt) => {
+const response = await FetchResponse(prompt);
+return response;
 }
 
 const flow = {
@@ -45,7 +43,7 @@ const flow = {
     path: "model"
   },
   model:{
-    message: async(params) => {return await runGenAI(params.userInput)},
+    message: async(params) => {return await runNoorAI(params.userInput)},
     path: "model"
   }
 };
