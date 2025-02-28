@@ -9,7 +9,7 @@ import axios from "axios";
                 'Content-Type': 'application/json'
             }
         };
-        await axios.post(`http://15.223.77.49:5000/query`, {'query': query}, axiosConfig)
+        await axios.post(`https://99pu1c9eml.execute-api.ca-central-1.amazonaws.com/query`, {'query': query}, axiosConfig)
             .then(res => {
                 response = res.data.answer;
             })
